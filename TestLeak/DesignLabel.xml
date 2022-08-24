@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appsettings>
+	<LabelTemplate Value="5A2FE15|5A2FE16|5A2FE17">
+		<Template_5A2FE15 LabelWidth="7" LabelLength="26">
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE15 02" Left="37" Top="87" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Barcode" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="5A2FE15" Left="9" Top="127" Length="188" Width="236" ScaleHeight="662" ScaleWidth="242" Angle="0" FontName="宋体" FontSize="236" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE15 02" Left="43" Top="822" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="80" Top="18" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="40" Top="51" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="163" Top="50" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="92" Top="907" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="102" Top="869" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="54" Top="870" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="180" FontName="宋体" FontSize="20" />
+		</Template_5A2FE15>
+		<Template_5A2FE16 LabelWidth="7" LabelLength="26">
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE16 02" Left="37" Top="87" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Barcode" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="5A2FE16" Left="9" Top="127" Length="188" Width="236" ScaleHeight="662" ScaleWidth="242" Angle="0" FontName="宋体" FontSize="236" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE16 02" Left="43" Top="822" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="80" Top="18" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="40" Top="51" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="163" Top="50" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="92" Top="907" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="102" Top="869" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="54" Top="870" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="180" FontName="宋体" FontSize="20" />
+		</Template_5A2FE16>
+		<Template_5A2FE17 LabelWidth="7" LabelLength="26">
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE17 02" Left="37" Top="87" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Barcode" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="5A2FE17" Left="9" Top="127" Length="188" Width="236" ScaleHeight="662" ScaleWidth="242" Angle="0" FontName="宋体" FontSize="236" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Static" Sign="BARCODE" PrintValue="U6 5A2FE17 02" Left="43" Top="822" Length="29" Width="187" ScaleHeight="29" ScaleWidth="187" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="80" Top="18" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="40" Top="51" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="163" Top="50" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="0" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="DATE" PrintValue="220819" Left="92" Top="907" Length="29" Width="91" ScaleHeight="29" ScaleWidth="91" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="TIME" PrintValue="22:22:22" Left="102" Top="869" Length="29" Width="118" ScaleHeight="29" ScaleWidth="118" Angle="180" FontName="宋体" FontSize="20" />
+			<Item FieldObjectType="Text" FieldObjectValueType="Variable" Sign="SERIAL" PrintValue="001" Left="54" Top="870" Length="29" Width="50" ScaleHeight="29" ScaleWidth="50" Angle="180" FontName="宋体" FontSize="20" />
+		</Template_5A2FE17>
+	</LabelTemplate>
+</appsettings>
