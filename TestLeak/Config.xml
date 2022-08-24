@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appsettings>
+	<LeakTestSettings Com="COM1" Speed="115200" Data="7" Stop="1" CheckType="Even" SuccessSign="(OK)" ErrorSign="TD" GapAlertValue="5" EnabledGapAlert="False" />
+	<PrintCheckSettings Com="COM3" Speed="115200" Data="7" Stop="1" CheckType="Even" EnabledCheck="False" EnabledStrictCheck="False" />
+	<PrintSettings PrintName="ZDesigner 105SL 203DPI" DpiX="96" />
+	<PartList>
+		<Item Value="5A2FE15" PrintCount="8" />
+		<Item Value="5A2FE16" PrintCount="8" />
+		<Item Value="5A2FE17" PrintCount="8" />
+	</PartList>
+	<Password Value="" />
+	<EnabledAlertSound Value="True" />
+	<PrintSerial Value="760" ResetSign="2022/8/19" />
+</appsettings>
