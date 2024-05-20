@@ -74,6 +74,8 @@ namespace TestLeak
                 TempNumericUpDown.Minimum = 1;
                 TempNumericUpDown.Maximum = 9999;
 
+                comboBox_DpiX.SelectedItem = "96";
+
                 TempCombobox.SelectedValueChanged += TempCombobox_SelectedValueChanged;
                 TempNumericUpDown.ValueChanged += TempNumericUpDown_ValueChanged;
                 TempTextBox.TextChanged += TempTextBox_TextChanged;
@@ -1141,8 +1143,8 @@ namespace TestLeak
                 string HeaderText = Template_dataGridView.Columns[e.ColumnIndex].HeaderText;
                 DataGridViewCell cell = Template_dataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 if (TempCombobox.Visible) { cell.Value = TempCombobox.Text; TempCombobox.Visible = false; }
-                else if (TempNumericUpDown.Visible) { cell.Value = TempNumericUpDown.Value; TempNumericUpDown.Visible = false; }
-                else if (TempTextBox.Visible) { cell.Value = TempTextBox.Text; TempTextBox.Visible = false; }
+                if (TempNumericUpDown.Visible) { cell.Value = TempNumericUpDown.Value; TempNumericUpDown.Visible = false; }
+                if (TempTextBox.Visible) { cell.Value = TempTextBox.Text; TempTextBox.Visible = false; }
             }
             catch (Exception ex)
             {
@@ -1205,6 +1207,9 @@ namespace TestLeak
         {
             try
             {
+                TempCombobox.Visible = false;
+                TempTextBox.Visible = false;
+                TempNumericUpDown.Visible = false;
                 ToolStripMenuItem Item = (ToolStripMenuItem)sender;
                 switch (Item.Text)
                 {
@@ -1262,6 +1267,8 @@ namespace TestLeak
                                         LabelField.Top = CurrentMousePoint.Y + (T.Top - CopyLabelFields[0].Top);
                                     }
                                 }
+                                LabelField.ObjectType = (DrawObjectType)Enum.Parse(typeof(DrawObjectType), LabelField.FieldObjectType);
+                                LabelField.ObjectValueType = (DrawObjectValueType)Enum.Parse(typeof(DrawObjectValueType), LabelField.FieldObjectValueType);
                                 EditLabelFields.Add(LabelField);
                                 EditLabelTemplate.LabelFields.Add(LabelField);
                             }
@@ -1297,6 +1304,28 @@ namespace TestLeak
                             {
                                 T.Left = EditLabelFields[0].Left;
                             });
+                        }
+                        break;
+                    case "最上面":
+                        if (EditLabelFields.Count > 0)
+                        {
+                            EditLabelTemplate.LabelFields.RemoveAll(T => { return EditLabelFields.Find(F => { return F.Line == T.Line; }) != null; });
+                            EditLabelTemplate.LabelFields.AddRange(EditLabelFields);
+                            Line = 1;
+                            EditLabelTemplate.LabelFields.ForEach(T => { T.Line = Line; Line++; });
+                        }
+
+                        break;
+                    case "最下面":
+                        if (EditLabelFields.Count > 0)
+                        {
+                            EditLabelTemplate.LabelFields.RemoveAll(T => { return EditLabelFields.Find(F => { return F.Line == T.Line; }) != null; });
+                            EditLabelFields.ForEach(T =>
+                            {
+                                EditLabelTemplate.LabelFields.Insert(0, T);
+                            });
+                            Line = 1;
+                            EditLabelTemplate.LabelFields.ForEach(T => { T.Line = Line; Line++; });
                         }
                         break;
                 }

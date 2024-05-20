@@ -166,6 +166,7 @@ namespace TestLeak
                 dr["Module"] = Module;
                 dr["Description"] = val;
                 LogDT.Rows.InsertAt(dr, 0);
+                dataGridView_Log.CurrentCell = dataGridView_Log.Rows[0].Cells[0];
 
                 if (WriteSign.Equals("Yes")) WriteLog(Module, val);
             }
@@ -842,6 +843,8 @@ namespace TestLeak
                                 T.PrintValue = PrintTime.ToString("HH:mm:ss");
                                 break;
                             case "SERIAL":
+                                if (MyParameter.PrintSerial.Serial.ToString().Length > 3) throw new Exception("序列号错误，超出位数！");
+                                Invoke(new CallbackSetLog(SetLog), new object[] { "错误提示", "序列号错误，超出位数！", "Yes" });
                                 T.PrintValue = MyParameter.PrintSerial.Serial.ToString().PadLeft(3, '0');
                                 break;
                             default:

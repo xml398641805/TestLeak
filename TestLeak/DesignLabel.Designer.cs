@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DesignLabel));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -80,6 +80,9 @@
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.Template_toolStripButton_AddQr = new System.Windows.Forms.ToolStripButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel_Box = new System.Windows.Forms.Panel();
+            this.Template_pictureBox_Preview = new System.Windows.Forms.PictureBox();
+            this.panel_Ruler_Horizontal = new System.Windows.Forms.Panel();
             this.panel_Ruler_Vertical = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox_DpiX = new System.Windows.Forms.ComboBox();
@@ -102,14 +105,23 @@
             this.Template_ContextMenu_toolStripMenuItem_Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.重置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.panel_Ruler_Horizontal = new System.Windows.Forms.Panel();
-            this.panel_Box = new System.Windows.Forms.Panel();
-            this.Template_pictureBox_Preview = new System.Windows.Forms.PictureBox();
             this.排列ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.水平对齐ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.垂直对齐ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.重叠ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.最上面ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.最下面ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.toolStrip_LabelPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -121,12 +133,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Template_dataGridView)).BeginInit();
             this.toolStrip_DrawPanel.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel_Box.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Template_pictureBox_Preview)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Template_numericUpDown_LabelLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Template_numericUpDown_LabelWidth)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            this.panel_Box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Template_pictureBox_Preview)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -350,7 +362,7 @@
             this.Template_FontName,
             this.Template_FontSize});
             this.Template_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Template_dataGridView.Location = new System.Drawing.Point(82, 0);
+            this.Template_dataGridView.Location = new System.Drawing.Point(90, 0);
             this.Template_dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.Template_dataGridView.Name = "Template_dataGridView";
             this.Template_dataGridView.RowHeadersWidth = 30;
@@ -358,7 +370,7 @@
             this.Template_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Template_dataGridView.ShowCellErrors = false;
             this.Template_dataGridView.ShowRowErrors = false;
-            this.Template_dataGridView.Size = new System.Drawing.Size(525, 503);
+            this.Template_dataGridView.Size = new System.Drawing.Size(517, 503);
             this.Template_dataGridView.TabIndex = 2;
             this.Template_dataGridView.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Template_dataGridView_CellEnter);
             this.Template_dataGridView.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.Template_dataGridView_CellLeave);
@@ -369,8 +381,8 @@
             // Template_ID
             // 
             this.Template_ID.DataPropertyName = "Line";
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Template_ID.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Template_ID.DefaultCellStyle = dataGridViewCellStyle5;
             this.Template_ID.HeaderText = "序号";
             this.Template_ID.MinimumWidth = 6;
             this.Template_ID.Name = "Template_ID";
@@ -400,8 +412,8 @@
             // Template_FieldType
             // 
             this.Template_FieldType.DataPropertyName = "FieldObjectType";
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Template_FieldType.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Template_FieldType.DefaultCellStyle = dataGridViewCellStyle6;
             this.Template_FieldType.HeaderText = "类型";
             this.Template_FieldType.MinimumWidth = 6;
             this.Template_FieldType.Name = "Template_FieldType";
@@ -517,19 +529,29 @@
             this.toolStripSeparator5,
             this.Template_toolStripButton_AddBar,
             this.toolStripSeparator7,
-            this.Template_toolStripButton_AddQr});
+            this.Template_toolStripButton_AddQr,
+            this.toolStripSeparator2,
+            this.toolStripButton1,
+            this.toolStripSeparator3,
+            this.toolStripButton2,
+            this.toolStripSeparator9,
+            this.toolStripButton3,
+            this.toolStripSeparator10,
+            this.toolStripButton4,
+            this.toolStripSeparator11});
             this.toolStrip_DrawPanel.Location = new System.Drawing.Point(0, 0);
             this.toolStrip_DrawPanel.Name = "toolStrip_DrawPanel";
-            this.toolStrip_DrawPanel.Size = new System.Drawing.Size(82, 503);
+            this.toolStrip_DrawPanel.Size = new System.Drawing.Size(90, 503);
             this.toolStrip_DrawPanel.TabIndex = 0;
             this.toolStrip_DrawPanel.Text = "toolStrip3";
             // 
             // Template_toolStripButton_AddText
             // 
             this.Template_toolStripButton_AddText.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddText.Image")));
+            this.Template_toolStripButton_AddText.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddText.Name = "Template_toolStripButton_AddText";
-            this.Template_toolStripButton_AddText.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddText.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddText.Tag = "Button";
             this.Template_toolStripButton_AddText.Text = "Text";
             this.Template_toolStripButton_AddText.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -542,9 +564,10 @@
             // Template_toolStripButton_AddDate
             // 
             this.Template_toolStripButton_AddDate.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddDate.Image")));
+            this.Template_toolStripButton_AddDate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddDate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddDate.Name = "Template_toolStripButton_AddDate";
-            this.Template_toolStripButton_AddDate.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddDate.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddDate.Tag = "Button";
             this.Template_toolStripButton_AddDate.Text = "Date";
             this.Template_toolStripButton_AddDate.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -557,9 +580,10 @@
             // Template_toolStripButton_AddNumeric
             // 
             this.Template_toolStripButton_AddNumeric.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddNumeric.Image")));
+            this.Template_toolStripButton_AddNumeric.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddNumeric.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddNumeric.Name = "Template_toolStripButton_AddNumeric";
-            this.Template_toolStripButton_AddNumeric.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddNumeric.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddNumeric.Tag = "Button";
             this.Template_toolStripButton_AddNumeric.Text = "Number";
             this.Template_toolStripButton_AddNumeric.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -572,9 +596,10 @@
             // Template_toolStripButton_AddMatrix
             // 
             this.Template_toolStripButton_AddMatrix.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddMatrix.Image")));
+            this.Template_toolStripButton_AddMatrix.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddMatrix.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddMatrix.Name = "Template_toolStripButton_AddMatrix";
-            this.Template_toolStripButton_AddMatrix.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddMatrix.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddMatrix.Tag = "Button";
             this.Template_toolStripButton_AddMatrix.Text = "Matrix";
             this.Template_toolStripButton_AddMatrix.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -587,9 +612,10 @@
             // Template_toolStripButton_AddBar
             // 
             this.Template_toolStripButton_AddBar.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddBar.Image")));
+            this.Template_toolStripButton_AddBar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddBar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddBar.Name = "Template_toolStripButton_AddBar";
-            this.Template_toolStripButton_AddBar.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddBar.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddBar.Tag = "Button";
             this.Template_toolStripButton_AddBar.Text = "Barcode";
             this.Template_toolStripButton_AddBar.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -602,9 +628,10 @@
             // Template_toolStripButton_AddQr
             // 
             this.Template_toolStripButton_AddQr.Image = ((System.Drawing.Image)(resources.GetObject("Template_toolStripButton_AddQr.Image")));
+            this.Template_toolStripButton_AddQr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Template_toolStripButton_AddQr.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Template_toolStripButton_AddQr.Name = "Template_toolStripButton_AddQr";
-            this.Template_toolStripButton_AddQr.Size = new System.Drawing.Size(79, 24);
+            this.Template_toolStripButton_AddQr.Size = new System.Drawing.Size(87, 24);
             this.Template_toolStripButton_AddQr.Tag = "Button";
             this.Template_toolStripButton_AddQr.Text = "QRCode";
             this.Template_toolStripButton_AddQr.Click += new System.EventHandler(this.Template_toolStripButton_AddObject_Click);
@@ -623,6 +650,45 @@
             this.panel4.Padding = new System.Windows.Forms.Padding(3);
             this.panel4.Size = new System.Drawing.Size(471, 479);
             this.panel4.TabIndex = 7;
+            // 
+            // panel_Box
+            // 
+            this.panel_Box.AutoScroll = true;
+            this.panel_Box.AutoSize = true;
+            this.panel_Box.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel_Box.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Box.Controls.Add(this.Template_pictureBox_Preview);
+            this.panel_Box.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Box.Location = new System.Drawing.Point(33, 33);
+            this.panel_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_Box.Name = "panel_Box";
+            this.panel_Box.Size = new System.Drawing.Size(431, 439);
+            this.panel_Box.TabIndex = 2;
+            this.panel_Box.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Panel_Box_Scroll);
+            // 
+            // Template_pictureBox_Preview
+            // 
+            this.Template_pictureBox_Preview.BackColor = System.Drawing.Color.White;
+            this.Template_pictureBox_Preview.Location = new System.Drawing.Point(2, 2);
+            this.Template_pictureBox_Preview.Margin = new System.Windows.Forms.Padding(2);
+            this.Template_pictureBox_Preview.Name = "Template_pictureBox_Preview";
+            this.Template_pictureBox_Preview.Size = new System.Drawing.Size(76, 40);
+            this.Template_pictureBox_Preview.TabIndex = 0;
+            this.Template_pictureBox_Preview.TabStop = false;
+            this.Template_pictureBox_Preview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseClick);
+            this.Template_pictureBox_Preview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseDown);
+            this.Template_pictureBox_Preview.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseMove);
+            this.Template_pictureBox_Preview.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseUp);
+            // 
+            // panel_Ruler_Horizontal
+            // 
+            this.panel_Ruler_Horizontal.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.panel_Ruler_Horizontal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Ruler_Horizontal.Location = new System.Drawing.Point(33, 3);
+            this.panel_Ruler_Horizontal.Name = "panel_Ruler_Horizontal";
+            this.panel_Ruler_Horizontal.Size = new System.Drawing.Size(431, 30);
+            this.panel_Ruler_Horizontal.TabIndex = 1;
+            this.panel_Ruler_Horizontal.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Ruler_Horizontal_Paint);
             // 
             // panel_Ruler_Vertical
             // 
@@ -781,9 +847,10 @@
             this.Template_ContextMenu_toolStripMenuItem_Delete,
             this.toolStripSeparator14,
             this.重置ToolStripMenuItem,
-            this.排列ToolStripMenuItem});
+            this.排列ToolStripMenuItem,
+            this.重叠ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 170);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 170);
             // 
             // Template_ContextMenu_toolStripMenuItem_Angel
             // 
@@ -792,7 +859,7 @@
             this.Template_ContextMenu_toolStripMenuItem_Angel_90,
             this.Template_ContextMenu_toolStripMenuItem_Angel_180});
             this.Template_ContextMenu_toolStripMenuItem_Angel.Name = "Template_ContextMenu_toolStripMenuItem_Angel";
-            this.Template_ContextMenu_toolStripMenuItem_Angel.Size = new System.Drawing.Size(124, 22);
+            this.Template_ContextMenu_toolStripMenuItem_Angel.Size = new System.Drawing.Size(180, 22);
             this.Template_ContextMenu_toolStripMenuItem_Angel.Text = "旋转图形";
             // 
             // Template_ContextMenu_toolStripMenuItem_Angel_0
@@ -819,33 +886,33 @@
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
             // 
             // Template_ContextMenu_toolStripMenuItem_Copy
             // 
             this.Template_ContextMenu_toolStripMenuItem_Copy.Name = "Template_ContextMenu_toolStripMenuItem_Copy";
-            this.Template_ContextMenu_toolStripMenuItem_Copy.Size = new System.Drawing.Size(124, 22);
+            this.Template_ContextMenu_toolStripMenuItem_Copy.Size = new System.Drawing.Size(180, 22);
             this.Template_ContextMenu_toolStripMenuItem_Copy.Text = "复制";
             this.Template_ContextMenu_toolStripMenuItem_Copy.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
             // 
             // Template_ContextMenu_toolStripMenuItem_Paste
             // 
             this.Template_ContextMenu_toolStripMenuItem_Paste.Name = "Template_ContextMenu_toolStripMenuItem_Paste";
-            this.Template_ContextMenu_toolStripMenuItem_Paste.Size = new System.Drawing.Size(124, 22);
+            this.Template_ContextMenu_toolStripMenuItem_Paste.Size = new System.Drawing.Size(180, 22);
             this.Template_ContextMenu_toolStripMenuItem_Paste.Text = "粘贴";
             this.Template_ContextMenu_toolStripMenuItem_Paste.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
             // 
             // Template_ContextMenu_toolStripMenuItem_Delete
             // 
             this.Template_ContextMenu_toolStripMenuItem_Delete.Name = "Template_ContextMenu_toolStripMenuItem_Delete";
-            this.Template_ContextMenu_toolStripMenuItem_Delete.Size = new System.Drawing.Size(124, 22);
+            this.Template_ContextMenu_toolStripMenuItem_Delete.Size = new System.Drawing.Size(180, 22);
             this.Template_ContextMenu_toolStripMenuItem_Delete.Text = "删除";
             this.Template_ContextMenu_toolStripMenuItem_Delete.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(177, 6);
             // 
             // 重置ToolStripMenuItem
             // 
@@ -853,53 +920,6 @@
             this.重置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.重置ToolStripMenuItem.Text = "重置";
             this.重置ToolStripMenuItem.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument_PrintPage);
-            // 
-            // panel_Ruler_Horizontal
-            // 
-            this.panel_Ruler_Horizontal.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.panel_Ruler_Horizontal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Ruler_Horizontal.Location = new System.Drawing.Point(33, 3);
-            this.panel_Ruler_Horizontal.Name = "panel_Ruler_Horizontal";
-            this.panel_Ruler_Horizontal.Size = new System.Drawing.Size(431, 30);
-            this.panel_Ruler_Horizontal.TabIndex = 1;
-            this.panel_Ruler_Horizontal.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Ruler_Horizontal_Paint);
-            // 
-            // panel_Box
-            // 
-            this.panel_Box.AutoScroll = true;
-            this.panel_Box.AutoSize = true;
-            this.panel_Box.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel_Box.BackColor = System.Drawing.Color.DimGray;
-            this.panel_Box.Controls.Add(this.Template_pictureBox_Preview);
-            this.panel_Box.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Box.Location = new System.Drawing.Point(33, 33);
-            this.panel_Box.Margin = new System.Windows.Forms.Padding(2);
-            this.panel_Box.Name = "panel_Box";
-            this.panel_Box.Size = new System.Drawing.Size(431, 439);
-            this.panel_Box.TabIndex = 2;
-            this.panel_Box.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Panel_Box_Scroll);
-            // 
-            // Template_pictureBox_Preview
-            // 
-            this.Template_pictureBox_Preview.BackColor = System.Drawing.Color.White;
-            this.Template_pictureBox_Preview.Location = new System.Drawing.Point(2, 2);
-            this.Template_pictureBox_Preview.Margin = new System.Windows.Forms.Padding(2);
-            this.Template_pictureBox_Preview.Name = "Template_pictureBox_Preview";
-            this.Template_pictureBox_Preview.Size = new System.Drawing.Size(76, 40);
-            this.Template_pictureBox_Preview.TabIndex = 0;
-            this.Template_pictureBox_Preview.TabStop = false;
-            this.Template_pictureBox_Preview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseClick);
-            this.Template_pictureBox_Preview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseDown);
-            this.Template_pictureBox_Preview.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseMove);
-            this.Template_pictureBox_Preview.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Template_pictureBox_Preview_MouseUp);
             // 
             // 排列ToolStripMenuItem
             // 
@@ -913,16 +933,108 @@
             // 水平对齐ToolStripMenuItem
             // 
             this.水平对齐ToolStripMenuItem.Name = "水平对齐ToolStripMenuItem";
-            this.水平对齐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.水平对齐ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.水平对齐ToolStripMenuItem.Text = "水平对齐";
             this.水平对齐ToolStripMenuItem.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
             // 
             // 垂直对齐ToolStripMenuItem
             // 
             this.垂直对齐ToolStripMenuItem.Name = "垂直对齐ToolStripMenuItem";
-            this.垂直对齐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.垂直对齐ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.垂直对齐ToolStripMenuItem.Text = "垂直对齐";
             this.垂直对齐ToolStripMenuItem.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument_PrintPage);
+            // 
+            // 重叠ToolStripMenuItem
+            // 
+            this.重叠ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.最上面ToolStripMenuItem,
+            this.最下面ToolStripMenuItem});
+            this.重叠ToolStripMenuItem.Name = "重叠ToolStripMenuItem";
+            this.重叠ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.重叠ToolStripMenuItem.Text = "重叠";
+            // 
+            // 最上面ToolStripMenuItem
+            // 
+            this.最上面ToolStripMenuItem.Name = "最上面ToolStripMenuItem";
+            this.最上面ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.最上面ToolStripMenuItem.Text = "最上面";
+            this.最上面ToolStripMenuItem.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
+            // 
+            // 最下面ToolStripMenuItem
+            // 
+            this.最下面ToolStripMenuItem.Name = "最下面ToolStripMenuItem";
+            this.最下面ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.最下面ToolStripMenuItem.Text = "最下面";
+            this.最下面ToolStripMenuItem.Click += new System.EventHandler(this.Template_ContextMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(87, 6);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(87, 24);
+            this.toolStripButton1.Text = "Rectangle";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(87, 6);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(87, 24);
+            this.toolStripButton2.Text = "Line";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(87, 6);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(87, 24);
+            this.toolStripButton3.Text = "Circle";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(87, 6);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(87, 24);
+            this.toolStripButton4.Text = "Image";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(87, 6);
             // 
             // DesignLabel
             // 
@@ -956,13 +1068,13 @@
             this.toolStrip_DrawPanel.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel_Box.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Template_pictureBox_Preview)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Template_numericUpDown_LabelLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Template_numericUpDown_LabelWidth)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.panel_Box.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Template_pictureBox_Preview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1048,5 +1160,17 @@
         private System.Windows.Forms.ToolStripMenuItem 排列ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 水平对齐ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 垂直对齐ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重叠ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 最上面ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 最下面ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
     }
 }
